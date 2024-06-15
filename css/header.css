@@ -10,6 +10,15 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+#topbar .menu-bars img {
+    height: 2.2rem;
+}
+
+#topbar .navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
 #logo {
     /* Align the logo to the center of its cell */
     display: flex;
@@ -64,6 +73,14 @@ header {
         sans-serif;
 }
 
+/* #header::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.7));
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: 1;
+} */
+
 header>.container-md {
     display: flex;
     flex-direction: column;
@@ -73,8 +90,9 @@ header>.container-md {
 }
 
 header h1 {
-    font-size: 48px;
+    font-size: 50px;
     font-weight: bold;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 #book form {
@@ -115,6 +133,11 @@ header h1 {
 
 #book form .submit button {
     width: 100%;
+}
+
+#book button[type="submit"] {
+    border-radius: 100px;
+    margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
