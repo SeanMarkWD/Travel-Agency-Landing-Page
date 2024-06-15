@@ -11,6 +11,22 @@
     /* gap between rows and columns */
 }
 
+.destination-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    /* gap between rows and columns */
+}
+
+.destination img.destination-gallery-resize {
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+    min-height: 240px;
+    /* Allows the container to expand if the image is taller */
+}
+
 .destinations .destination img {
     object-fit: cover;
     max-height: 240px;
