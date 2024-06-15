@@ -1,9 +1,13 @@
 #topbar {
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* 1 row with 3 columns */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
+}
+
+#topbar>.wrap {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 #logo {
@@ -22,18 +26,28 @@
     line-height: 40px;
 }
 
+#menu nav a:hover {
+    border-color: white;
+    color: white;
+}
+
+#menu nav a.btn:hover {
+    background: var(--bs-warning);
+    color: white;
+}
+
 #search-field {
     background-color: transparent;
     border: none;
 }
 
 header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url('/images/header.jpg');
     display: flex;
     flex-direction: column;
     background-position: center;
     justify-content: space-between;
     /* A way to use an image in a background: */
-    background-image: url('/images/header.jpg');
 
     /* css fill background with image" */
     background-size: cover;
@@ -44,7 +58,10 @@ header {
     /* make the element take up the entire height of the screen */
     height: 100vh;
     padding-bottom: 20px;
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat",
+        Helvetica,
+        Arial,
+        sans-serif;
 }
 
 header>.container-md {

@@ -24,7 +24,7 @@
                 <!--Search-->
                 <form class="input-group">
                     <img src="./icons/search-white.svg" alt="Search">
-                    <input id="search-field" class="form-control" type="text" placeholder="Search">
+                    <input class="form-control" id="search-field" name="query" placeholder="Search" type="text">
                 </form>
 
                 <!--Logo Icon-->
@@ -52,7 +52,8 @@
                 <form>
                     <div class="destination-select">
                         <label>Destinations</label>
-                        <select class="form-select">
+                        <select aria-label="Select destination" class="form-select" id="book-field-destination"
+                            name="destination" required>
                             <option value="" selected disabled>Select destination</option>
                             <option value="paris">Paris</option>
                             <option value="tokyo">Tokyo</option>
@@ -66,14 +67,15 @@
                     </div>
                     <div class="to">
                         <label>To</label>
-                        <input type="date" class="form-control">
+                        <input type="date" class="form-control" required aria-label="From">
                     </div>
                     <div class="guests">
                         <label>Guests</label>
-                        <input type="number" value="2" class="form-control">
+                        <input type="number" value="2" class="form-control" required
+                            aria-label="Enter a number of guests">
                     </div>
                     <div class="submit">
-                        <button class="btn btn-warning" type="submit">
+                        <button class="btn btn-warning" title="Search" type="submit">
                             <img src="./icons/arrow-right.svg" alt="arrow">
                         </button>
                     </div>
@@ -166,7 +168,8 @@
                 </p>
                 <!--Newsletter Form-->
                 <form class="input-group">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input autocomplete="email" class="form-control" name="email" placeholder="Email" required
+                        type="email">
                     <button class="btn btn-success" type="submit">
                         Subscribe
                         <img src="./icons/arrow-right-white.svg" alt="arrow">
