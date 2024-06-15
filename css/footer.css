@@ -1,0 +1,10 @@
+footer {
+    background-color: #FFC107;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer nav a {
+    display: block;
+    color: black;
+}
