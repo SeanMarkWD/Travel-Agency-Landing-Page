@@ -127,6 +127,33 @@ header {
         sans-serif;
 }
 
+.header-contact {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url('/images/destinations/cape-town-eve-brent-ninaber-L6EP96_w1Fc-unsplash.jpg');
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: space-between;
+    /* A way to use an image in a background: */
+
+    /* css fill background with image" */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* make the text white */
+    color: white;
+
+    /* make the element take up the entire height of the screen */
+    height: 100vh;
+    padding-bottom: 20px;
+    font-family: "Montserrat",
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
 /* #header::before {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.7));
     content: "";
