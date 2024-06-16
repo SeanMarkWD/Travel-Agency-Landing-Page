@@ -33,6 +33,27 @@
     width: 100%;
 }
 
+/* Zoom effect */
+/* The zoom container */
+.img-hover-zoom {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Reansition for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform 1.2s ease;
+}
+
+/* Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
+
+.img-hover-zoom {
+    transition: transform .5s ease;
+}
+
 @media (min-width: 768px) {
     .destinations img {
         max-height: none;
