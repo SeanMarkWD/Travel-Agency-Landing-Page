@@ -20,9 +20,8 @@
 }
 
 .destination img.destination-gallery-resize {
-    object-fit: contain;
-    height: 100%;
-    width: auto;
+    object-fit: cover;
+    background-size: 100% auto;
     min-height: 240px;
     /* Allows the container to expand if the image is taller */
 }
