@@ -19,6 +19,10 @@
     justify-content: flex-end;
 }
 
+.topbar-links {
+    padding: 10px 10px;
+}
+
 #logo {
     /* Align the logo to the center of its cell */
     display: flex;
@@ -88,13 +92,13 @@ header {
 #header-individual {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url('/images/destinations/paris.jpg');
     height: 40vh;
-    background-position: center 60%;
+    background-position: center 80%;
 }
 
 #header-gallery {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url('/images/header.jpg');
     height: 40vh;
-    background-position: center 30%;
+    background-position: center 70%;
 }
 
 #header-contact {
