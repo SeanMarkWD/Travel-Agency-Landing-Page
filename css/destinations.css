@@ -1,0 +1,101 @@
+#destinations {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    /* gap between rows and columns */
+}
+
+.destination-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    /* gap between rows and columns */
+}
+
+.destination img.destination-gallery-resize {
+    object-fit: cover;
+    background-size: 100% auto;
+    min-height: 240px;
+    /* Allows the container to expand if the image is taller */
+}
+
+.destinations .destination img {
+    object-fit: cover;
+    max-height: 240px;
+    width: 100%;
+}
+
+/* Zoom effect */
+/* The zoom container */
+.img-hover-zoom {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Reansition for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform 1.2s ease;
+}
+
+/* Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
+
+.img-hover-zoom {
+    transition: transform .5s ease;
+}
+
+@media (min-width: 768px) {
+    .destinations img {
+        max-height: none;
+    }
+}
+
+.destination {
+    /* Placement of child elements will be relative to this element */
+    position: relative;
+}
+
+.destination .location {
+    /* Place the element at the bottom of the parent element (.destination) */
+    position: absolute;
+    bottom: 0;
+
+    /* Make it take up the entire width of the parent */
+    width: 100%;
+
+    /* White, centered text */
+    color: white;
+    text-align: center;
+}
+
+.destination .location .country {
+    /* so country doesn't use the same font as the header */
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+
+
+@media (min-width: 768px) {
+    .destinations {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    #destinations .description {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
