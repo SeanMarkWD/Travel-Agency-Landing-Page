@@ -77,10 +77,17 @@
     text-align: center;
 }
 
+.destination .location .city {
+    font-family: "Dancing Script";
+    font-size: 24px;
+}
+
 .destination .location .country {
-    /* so country doesn't use the same font as the header */
-    font-family: "Montserrat";
-    font-size: 14px;
+    font-family: "Montserrat",
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 16px;
 }
 
 
