@@ -126,6 +126,7 @@ header h1 {
 
 .title-container {
     position: absolute;
+    justify-self: center;
     bottom: 0;
     left: 46%;
     transform: translateX(-50%);
@@ -235,5 +236,10 @@ header h1 {
         width: 100px;
         height: 100px;
         margin-bottom: 5px;
+    }
+
+    .title-container {
+        position: absolute;
+        justify-content: center;
     }
 }

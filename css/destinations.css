@@ -13,13 +13,13 @@
 .destination img.destination-gallery-resize {
     object-fit: cover;
     background-size: 100% auto;
-    min-height: 240px;
+    min-height: 380px;
     /* Allows the container to expand if the image is taller */
 }
 
 .destinations .destination img {
     object-fit: cover;
-    max-height: 240px;
+    max-height: 380px;
     width: 100%;
 }
 
