@@ -1,21 +1,12 @@
 #destinations {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 4rem 0;
 }
 
 .destinations {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    /* gap between rows and columns */
-}
-
-.destination-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
+    gap: 1rem;
     /* gap between rows and columns */
 }
 
