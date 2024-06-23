@@ -149,6 +149,10 @@ header h1 {
     gap: 10px;
 }
 
+.book-individual {
+    padding-bottom: 20px;
+}
+
 #book form .destination-select {
     /* This is how we assign a grid area to each element */
     grid-area: destination;
