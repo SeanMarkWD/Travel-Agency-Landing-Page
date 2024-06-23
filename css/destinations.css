@@ -7,47 +7,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
-    /* gap between rows and columns */
-}
-
-.destination img.destination-gallery-resize {
-    object-fit: cover;
-    background-size: 100% auto;
-    min-height: 380px;
-    /* Allows the container to expand if the image is taller */
-}
-
-.destinations .destination img {
-    object-fit: cover;
-    max-height: 380px;
-    width: 100%;
-}
-
-/* Zoom effect */
-/* The zoom container */
-.img-hover-zoom {
-    height: 100%;
-    overflow: hidden;
-}
-
-/* Reansition for smooth transformation of images */
-.img-hover-zoom img {
-    transition: transform 1.2s ease;
-}
-
-/* Finally, transforming the image when container gets hovered */
-.img-hover-zoom:hover img {
-    transform: scale(1.2);
-}
-
-.img-hover-zoom {
-    transition: transform .5s ease;
-}
-
-@media (min-width: 768px) {
-    .destinations img {
-        max-height: none;
-    }
 }
 
 .destination {
@@ -58,6 +17,7 @@
 .destination .location {
     /* Place the element at the bottom of the parent element (.destination) */
     position: absolute;
+    margin-bottom: 10px;
     bottom: 0;
 
     /* Make it take up the entire width of the parent */
@@ -81,7 +41,32 @@
     font-size: 16px;
 }
 
+.destinations .destination img {
+    object-fit: cover;
+    justify-self: center;
+    max-height: 380px;
+    min-height: 380px;
+    width: 100%;
+}
 
+.img-hover-zoom {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Reansition for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform 1.2s ease;
+}
+
+/* Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
+
+.img-hover-zoom {
+    transition: transform .5s ease;
+}
 
 @media (min-width: 768px) {
     .destinations {
@@ -95,5 +80,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .destinations img {
+        max-height: none;
     }
 }

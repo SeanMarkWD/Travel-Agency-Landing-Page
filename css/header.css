@@ -36,6 +36,10 @@
     line-height: 40px;
 }
 
+#menu .menu-bars {
+    height: 1.7rem;
+}
+
 header nav a {
     padding: 10px 10px;
     color: white;
