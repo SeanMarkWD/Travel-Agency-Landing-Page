@@ -12,12 +12,12 @@
 .destination {
     /* Placement of child elements will be relative to this element */
     position: relative;
+    border-radius: 10px;
 }
 
 .destination .location {
     /* Place the element at the bottom of the parent element (.destination) */
     position: absolute;
-    margin-bottom: 10px;
     bottom: 0;
 
     /* Make it take up the entire width of the parent */
@@ -42,11 +42,33 @@
 }
 
 .destinations .destination img {
+    position: relative;
     object-fit: cover;
     justify-self: center;
     max-height: 380px;
     min-height: 380px;
     width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.destinations .destination a {
+    display: block;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .img-hover-zoom {
