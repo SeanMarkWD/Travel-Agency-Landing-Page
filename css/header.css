@@ -103,6 +103,10 @@ header {
     background-position: center 80%;
 }
 
+#success-shadow-box {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
 @media (min-width: 768px) {
     #header-gallery {
         background-position: center 15%;

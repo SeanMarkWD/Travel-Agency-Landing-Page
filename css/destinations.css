@@ -90,6 +90,28 @@
     transition: transform .5s ease;
 }
 
+.back-gallery-btn {
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    grid-column-end: auto;
+    margin-right: 0;
+    margin-left: auto;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 336px) {
+    .back-gallery-btn {
+
+        width: 100%;
+    }
+}
+
+.btn-warning:hover {
+    background-color: #e6b800;
+}
+
 @media (min-width: 768px) {
     .destinations {
         grid-template-columns: repeat(4, 1fr);
